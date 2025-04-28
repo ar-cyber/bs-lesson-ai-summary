@@ -9,7 +9,7 @@ const settings = {
     title: 'Enable Gemini Summary',
     description: 'Enable or disable the Gemini-powered course summary feature'
   }
-} as const satisfies PluginSettings;
+} as PluginSettings;
 
 export const geminiSummaryPlugin: Plugin<typeof settings> = {
   id: "gemini-summary",
